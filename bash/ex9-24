@@ -1,0 +1,78 @@
+#!/bin/bash
+
+# $RANDOM 在每次调用的时候,返回一个不同的随机整数.
+# 指定的范围是: 0 - 32767 (有符号的 16-bit 整数).
+
+MAXCOUNT=10
+count=1
+
+echo
+echo "$MAXCOUNT random numbers:"
+echo "-----------------"
+while ["$count" -le $MAXCOUNT ]
+do
+	number=$RANDOM
+	echo $number
+	let "count+=1"
+done
+echo "----------------"
+
+RANGE=500
+
+echo 
+
+number=$RANDOM
+let "number%=$RANGE"
+echo "Random number less than $RANGE---$number"
+echo
+
+FLOOR=200
+number=0
+while ["$number" -le $FLOOR ]
+do
+	number=$RANDOM
+done
+echo "Random number greater than $FLOOR----$number"
+echo
+
+
+
+number=0
+while ["$number" -le $FLOOR]
+do
+
+	number=$RANDOM
+	let "number%=$RANGE"
+done
+echo "Random number between $FLOOR and $RANGE----$number"
+
+
+BINARY=2
+T=1
+number=$RANDOM
+let "number%=$BINARY"
+
+if ["$number" -eq $T]
+then
+	echo "TRUE"
+else
+	echo "FALSE"
+fi
+
+echo
+
+SPOTS=6
+
+die1=0
+die2=0
+
+let "die1=$RANDOM%$SPOTS+1"
+let "die12=$RANDOM%$SPOTS+1"
+
+let "throw=$die1+$die2"
+echo "Throw of the dice =$throw"
+echo
+exit 0
+
+
+

@@ -1,0 +1,56 @@
+# #! /bin/bash 
+# #LiuYu liuyu.blog.51cto.com 
+# while true 
+# do 
+# clear 
+# echo  
+# echo "-------------------------------------------------------------------------" 
+# tput cup 2 10 
+# time=`date +"%d%m%Y"` 
+# echo -ne "USER:$USER\tHOST:$HOSTNAME\tdate:$time" 
+# echo  
+# tput cup 3  
+# echo  "-------------------------------------------------------------------------" 
+# tput cup 4 10 
+# echo -e "1:提取系统内存,并且在系统终端显示内容;" 
+# tput cup 5 10 
+# echo -e "2:提取系统内存,写入文件;" 
+# tput cup 6 10 
+# echo -e "3:退出;" 
+# tput cup 7  
+# echo  "--------------------------------------------------------------------------" 
+# echo  
+# tput cup 8 
+# echo "LiuYu " 
+# tput cup 9 8 
+# echo -n "You choice [1,2,3]:" 
+# read AA 
+# case $AA in 
+# 1)tput cup 10  
+# echo -n "请输入提取次数:" 
+# read BB1 
+# echo -n "请输入提取间隔:" 
+# read BB2 
+# echo -n "开始提取:" 
+# echo -e $time 
+# free -s $BB1 -c $BB2 
+# echo -n "提取结束" 
+# ;; 
+# 2)tput cup 11 
+# time2=`date +"%X"` 
+# echo -n "请输入提取次数:" 
+# read cc1 
+# echo -n "请输入提取间隔:" 
+# read cc2 
+# echo -n "开始提取:" 
+# echo -n $time 
+# free -s $cc1 -c $cc2 >> $time2.log 
+# echo -n "提取结束" 
+# ;; 
+# 3)exit 
+# ;; 
+# *)echo "liuyu.blog.51cto.com!" 
+# ;; 
+# esac 
+# read opendoc 
+# done

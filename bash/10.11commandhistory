@@ -1,0 +1,1000 @@
+ 1122  ls
+ 1123  mv configure.scan configure.in
+ 1124  ls
+ 1125  vi configure.in 
+ 1126  aclocal
+ 1127  ls
+ 1128  vi configure.in 
+ 1129  aclocal
+ 1130  ls
+ 1131  vi configure.in 
+ 1132  aclocal
+ 1133  ls
+ 1134  autoconf 
+ 1135  ls
+ 1136  vi Makefile.am
+ 1137  automake
+ 1138  automake --add-missing
+ 1139  ls
+ 1140  rm helloworld.h 
+ 1141  ls
+ 1142  vi helloworld.c 
+ 1143  automake --add-missing
+ 1144  vi configure.in 
+ 1145  automake --add-missing
+ 1146  ls
+ 1147  ./configure 
+ 1148  cd ..
+ 1149  ls
+ 1150  cd helloworld/
+ 1151  ls
+ 1152  make clean
+ 1153  ls
+ 1154  makeinstall
+ 1155  make install
+ 1156  makd dist
+ 1157  make dist
+ 1158  ls
+ 1159  make distclean
+ 1160  ls
+ 1161  cd  /media/
+ 1162  ls
+ 1163  cd 3859-E894/
+ 1164  ls
+ 1165  cd v0.0.7_rc2/
+ 1166  ls
+ 1167  md5sum uramdisk_nand.img 
+ 1168  md5sum uramdisks/uramdisk_nand_dect.img 
+ 1169  cd ..
+ 1170  umount 3859-E894/
+ 1171  ls
+ 1172  cd 3859-E894/
+ 1173  ls
+ 1174  cd firmware0.7/
+ 1175  ls
+ 1176  md5sum uramdisk_nand.img 
+ 1177  md5sum uramdisks/uramdisk_nand_dect.img 
+ 1178  sync
+ 1179  md5sum uramdisk_nand.img 
+ 1180  cd ../..
+ 1181  umount 3859-E894/
+ 1182  minicom 
+ 1183  ls
+ 1184  cd 桌面
+ 1185  ls
+ 1186  cd work/
+ 1187  ls
+ 1188  cd w2_v0.0.7.5/
+ 1189  ls
+ 1190  cd sd_images/
+ 1191  ls
+ 1192  sh sd_command -help
+ 1193  sudo ./sd_command -create /dev/sdb 
+ 1194  sudo sh sd_command -create /dev/sdb
+ 1195  sudo sh sd_command -init /dev/sdb
+ 1196  sudo sh sd_command -all /dev/sdb
+ 1197  sudo fdisk -l
+ 1198  umount /dev/sdb*
+ 1199  sudo fdisk -l
+ 1200  sudo umount /dev/sdb*
+ 1201  sudo sh sd_command -all /dev/sdb
+ 1202  sync
+ 1203  ls
+ 1204  sh sd_command -all /dev/sdb
+ 1205  sudo sh sd_command -all /dev/sdb
+ 1206  sync
+ 1207  cd /m
+ 1208  cd /media/
+ 1209  ls
+ 1210  cd 3859-E894/
+ 1211  ls
+ 1212  cd firmware
+ 1213  ls
+ 1214  md5sum update*
+ 1215  sync
+ 1216  umount ../../3859-E894/
+ 1217  cd ~
+ 1218  ls
+ 1219  cd 桌面
+ 1220  ls
+ 1221  cd work/
+ 1222  ls
+ 1223  cd v0.0.7.2/
+ 1224  ls
+ 1225  cd sd_images/
+ 1226  ls
+ 1227  sudo sh sd_command -create /dev/sdb
+ 1228  sudo sh sd_command -init /dev/sdb
+ 1229  sudo sh sd_command -all /dev/sdb
+ 1230  bc
+ 1231  ifconfig 
+ 1232  ls
+ 1233  exit
+ 1234  ls
+ 1235  minicom 
+ 1236  ls
+ 1237  cd ?
+ 1238  cd /
+ 1239  ls
+ 1240  minicom 
+ 1241  ls
+ 1242  cd 桌面
+ 1243  ls
+ 1244  cd work/
+ 1245  ls
+ 1246  cd rc1/
+ 1247  ls
+ 1248  cd sd_images/
+ 1249  ls
+ 1250  sudo sh sd_command -create /dev/sdb
+ 1251  sudo sh sd_command -init /dev/sdb
+ 1252  sudo sh sd_command -all /dev/sdb
+ 1253  ls
+ 1254  sudo fdisk -l
+ 1255  cd ..
+ 1256  ls
+ 1257  cd ,,
+ 1258  ls
+ 1259  cd ..
+ 1260  ls
+ 1261  cd v0.0.7.2/
+ 1262  ls
+ 1263  cd sd_images/
+ 1264  ls
+ 1265  sudo sh sd_command  -create /dev/sdb
+ 1266  sudo sh sd_command  -init /dev/sdb
+ 1267  sudo sh sd_command  -all /dev/sdb
+ 1268  ls
+ 1269  cd ..
+ 1270  ls
+ 1271  cd rc1/
+ 1272  ls
+ 1273  cd sd_images/
+ 1274  ls
+ 1275  sudo sh sd_command -create /dev/sdb
+ 1276  sudo sh sd_command -init /dev/sdb
+ 1277  ls
+ 1278  sudo sh sd_command -all /dev/sdb
+ 1279  cd ..
+ 1280  ls
+ 1281  cd ..
+ 1282  ls
+ 1283  cd myshell/
+ 1284  ls
+ 1285  vi burn_nand_only_kernel.sh 
+ 1286  minicom 
+ 1287  ls
+ 1288  cd 桌面
+ 1289  ls
+ 1290  cd work/
+ 1291  ls
+ 1292  cd myshell/
+ 1293  ls
+ 1294  vi mypart.sh
+ 1295  ls
+ 1296  sudo fdisk /dev/sdc
+ 1297  sudo fdisk -l
+ 1298  mkfs.vfat /dev/sdc
+ 1299  sudo mkfs.vfat /dev/sdc
+ 1300  sudo fdisk -l
+ 1301  sudo mkfs.vfat /dev/sdc*
+ 1302  cd ..
+ 1303  cd ~
+ 1304  mkfs -V -t vfat /dev/sdc
+ 1305  sudo mkfs -V -t vfat /dev/sdc
+ 1306  sudo fdisk -l
+ 1307  sudo mkfdisk -l
+ 1308  ls
+ 1309  sh sd_command -create /dev/sdd
+ 1310  sh sd_command -init /dev/sdd
+ 1311  sh sd_command -all /dev/sdd
+ 1312  umount /dev/sdd
+ 1313  umount /dev/sdd*
+ 1314  sync
+ 1315  fdisk -l
+ 1316  ls
+ 1317  cd ..
+ 1318  ls
+ 1319  cd ..
+ 1320  ls
+ 1321  cd v0.0.7.2/
+ 1322  ls
+ 1323  cd sd_images/
+ 1324  ls
+ 1325  sudo dengshoalin
+ 1326  su dengshaolin
+ 1327  cd /media/
+ 1328  ls
+ 1329  cd B49C-50D2/
+ 1330  ls
+ 1331  cd burn_kernel/
+ 1332  ls
+ 1333  cat burn_nand.sh 
+ 1334  sync
+ 1335  ls
+ 1336  cd ..
+ 1337  ls
+ 1338  cd burn_kernel/
+ 1339  ls
+ 1340  ll uImage 
+ 1341  chmod 777 uImage 
+ 1342  ll uImage 
+ 1343  cd ../..
+ 1344  umount B49C-50D2/
+ 1345  ls
+ 1346  cd B49C-50D2/
+ 1347  ls
+ 1348  ll
+ 1349  rm -rf burn_kernel/
+ 1350  sudo rm -rf burn_kernel/
+ 1351  ls
+ 1352  cd ..
+ 1353  ls
+ 1354  cd B49C-50D2/
+ 1355  ls
+ 1356  ll
+ 1357  chmod 777 *
+ 1358  sudo chmod 777 *
+ 1359  minicom 
+ 1360  ls
+ 1361  cd 桌面
+ 1362  ls
+ 1363  cd work/
+ 1364  ls
+ 1365  cd v0.0.7.2/
+ 1366  ls
+ 1367  cd sd_images/
+ 1368  ls
+ 1369  sudo fdisk -l
+ 1370  sudo sh sd_command -create /dev/sdb
+ 1371  sudo sh sd_command -init /dev/sdb
+ 1372  sudo sh sd_command -all /dev/sdb
+ 1373  ls
+ 1374  cd workspace
+ 1375  ls
+ 1376  cd ..
+ 1377  ls
+ 1378  cd 桌面
+ 1379  cd work/
+ 1380  ls
+ 1381  cd v0.0.6/
+ 1382  ls
+ 1383  cat reboot 
+ 1384  cat Readme
+ 1385  ls
+ 1386  cd ..
+ 1387  ;s
+ 1388  ls
+ 1389  cd v0.0.5.2/
+ 1390  ls
+ 1391  cd binaries/
+ 1392  ls
+ 1393  cd sd/
+ 1394  ls
+ 1395  sh format_sdcard 
+ 1396  sudo sh format_sdcard 
+ 1397  sudo fdisk -l
+ 1398  sudo sh format_sdcard /dev/sdb
+ 1399  umount /dev/sdb*
+ 1400  sudo umount /dev/sdb*
+ 1401  sudo sh format_sdcard /dev/sdb
+ 1402  sudo sh burn_sd /dev/sdb
+ 1403  sync
+ 1404  ls
+ 1405  cd ..
+ 1406  ls
+ 1407  cd ~
+ 1408  ls
+ 1409  sudo fdisk -l
+ 1410  ls
+ 1411  mkfs.vfat /devsdc
+ 1412  mkfs.vfat /dev/sdc
+ 1413  sudo mkfs.vfat /dev/sdc
+ 1414  mkfs -V -t vfat /dev/sdc
+ 1415  sudo mkfs -V -t vfat /dev/sdc
+ 1416  sudo mkfs -V -t vfat -I /dev/sdc
+ 1417  umount /dev/sdc
+ 1418  sudo mkfs -V -t vfat /dev/sdc
+ 1419  sudo mkfs -V -t vfat -I /dev/sdc
+ 1420  ls
+ 1421  netcfg
+ 1422  ifconfig 
+ 1423  ssh 10.11.68.92
+ 1424  minicom 
+ 1425  ll sh
+ 1426  which /bin/sh
+ 1427  which sh
+ 1428  ll /bin/sh
+ 1429  file /bin/sh
+ 1430  wc -l
+ 1431  ls
+ 1432  wc -l <info.txt 
+ 1433  ls
+ 1434  adb
+ 1435  echo $PATH
+ 1436  adb --help
+ 1437  export PATH=$PATH;/home/dengshaolin/resource/andriod-sdk-linux_86/tools
+ 1438  export PATH=$PATH:/home/dengshaolin/resource/android-sdk-linux_86/tools
+ 1439  echo $PATH
+ 1440  adb
+ 1441  ls
+ 1442  cd 桌面
+ 1443  cd work/
+ 1444  ks
+ 1445  cd wo
+ 1446  ls
+ 1447  cd shellspace/
+ 1448  ls
+ 1449  cd TestCode_Release_SDK_MX23_200912/
+ 1450  ls
+ 1451  cd vte_tar_ball/
+ 1452  ls
+ 1453  cd testcases/
+ 1454  ls
+ 1455  cd vte_tests_suite/
+ 1456  ls
+ 1457  cd network_tests/
+ 1458  ls
+ 1459  cd multicast_test/
+ 1460  ls
+ 1461  vi multicast_test.c
+ 1462  cd //
+ 1463  cd ..
+ 1464  cd ~/桌面/work/shellspace/TestCode_Release_SDK_MX23_200912/vte_tar_ball/testcases/vte_tests_suit
+ 1465  e/network_tests
+ 1466  ls
+ 1467  cd ~/桌面/work/shellspace/TestCode_Release_SDK_MX23_200912/vte_tar_ball/testcases/vte_tests_suit
+ 1468  e/network_tests~/桌面/work/shellspace/TestCode_Release_SDK_MX23_200912/vte_tar_ball/testcases/vte_tests_suit
+ 1469  e/network_tests
+ 1470  vf ~/桌面/work/shellspace/TestCode_Release_SDK_MX23_200912/vte_tar_ball/testcases
+ 1471  ls
+ 1472  cd ~/桌面/work/shellspace/TestCode_Release_SDK_MX23_200912/vte_tar_ball/testcases
+ 1473  ls
+ 1474  cd vte_tests_suite/
+ 1475  ls
+ 1476  cd network_tests/
+ 1477  ls
+ 1478  cd  ch_mac_addr_test/
+ 1479  ls
+ 1480  vi ch_mac_addr.sh 
+ 1481  ls
+ 1482  adb push ch_mac_addr.sh  /data/network_tests/
+ 1483  export ADBHOST=10.11.68.92
+ 1484  adb push ch_mac_addr.sh  /data/network_tests/
+ 1485  adb sync
+ 1486  adb push ch_mac_addr.sh  /data/network_tests/
+ 1487  sdb ls
+ 1488  adb ls
+ 1489  echo $env
+ 1490  env
+ 1491  adb kill-server
+ 1492  adb start-server
+ 1493  adb push ch_mac_addr.sh  /data/network_tests/
+ 1494  ls
+ 1495  vi ch_mac_addr.sh 
+ 1496  adb push ch_mac_addr.sh  /data/network_tests/ch_mac_addr_test
+ 1497  vi ch_mac_addr.sh .
+ 1498  cd ..
+ 1499  ls
+ 1500  cd multicast_test/
+ 1501  ls
+ 1502  vi multicast_test.
+ 1503  vi multicast_test.c
+ 1504  ls
+ 1505  cd ..
+ 1506  ls
+ 1507  cd ..
+ 1508  ls
+ 1509  adb push -rf keypad_tests/ /data/keypadtests
+ 1510  adb push  keypad_tests/ /data/keypadtests
+ 1511  ls
+ 1512  cd keypad_tests/
+ 1513  ls
+ 1514  cd keypad_testapp_1/
+ 1515  ls
+ 1516  vi keypad_test_1.c
+ 1517  vi keypad_main.c 
+ 1518  cd ..
+ 1519  ls
+ 1520  cd keypad_test_script/
+ 1521  ls
+ 1522  vi keypad_test.sh 
+ 1523  cd ../../..
+ 1524  ls
+ 1525  cd ../..
+ 1526  cd shellspace/
+ 1527  ls
+ 1528  cd commands/
+ 1529  adb push * /sbin
+ 1530  adb push * /sbin
+ 1531  adb ls
+ 1532  adb kill-server
+ 1533  sdb start-server
+ 1534  adb start-server
+ 1535  adb push * /sbin
+ 1536  cd ..
+ 1537  ls
+ 1538  adb push commands/* /sbin
+ 1539  adb push commands /sbin
+ 1540  adb push commands /data/command
+ 1541  ls
+ 1542  cd TestCode_Release_SDK_MX23_200912/
+ 1543  ls
+ 1544  cd vte_tar_ball/
+ 1545  ;s
+ 1546  ls
+ 1547  cd testcases/
+ 1548  ls
+ 1549  cd vte_tests_suite/
+ 1550  ls
+ 1551  cd storage_tests/
+ 1552  ls
+ 1553  cd ..
+ 1554  adb push storage_tests/ /data/storagetest
+ 1555  ls
+ 1556  cd storage_tests/
+ 1557  ls
+ 1558  vi storage_test_concurrent.sh 
+ 1559  ls
+ 1560  vi usbh_test.sh 
+ 1561  vi ubi_test.sh 
+ 1562  vi modules_verify.sh 
+ 1563  vi usb_ptp_test.sh 
+ 1564  vi usbh_test.sh 
+ 1565  vi usb_ptp_test.sh 
+ 1566  vi performance_prepare.sh 
+ 1567  ls
+ 1568  cd ..
+ 1569  ls
+ 1570  cd vte_tests_suite/
+ 1571  ls
+ 1572  adb kill-server
+ 1573  adb start-server
+ 1574  ls
+ 1575  adb push fs_tests/ /data
+ 1576  adb push fs_tests/ /data/fstest
+ 1577  cd fs_tests/
+ 1578  cd fs_fsck/
+ 1579  ls
+ 1580  vi fs_fsck.sh 
+ 1581  cd ..
+ 1582  ls
+ 1583  cd fs_inod/
+ 1584  ls
+ 1585  vi fs_inod.sh 
+ 1586  cd ..
+ 1587  vi cramfs_test1.sh 
+ 1588  ls
+ 1589  vi jffs2_test1.sh 
+ 1590  minicom 
+ 1591  minicom 
+ 1592  iptraf
+ 1593  quotacheck
+ 1594  sudo apt-get install quota
+ 1595  quotacheck
+ 1596  repquota
+ 1597  iptraf
+ 1598  sudo apt-get install iptraf
+ 1599  iptraf
+ 1600  sudo iptraf
+ 1601  iwconfig
+ 1602  nfsstat
+ 1603  sudo apt-get install nfs-common
+ 1604  nfsstat
+ 1605  mrtg
+ 1606  sudo apt-get install mrtg
+ 1607  mrtg
+ 1608  ntop
+ 1609  sudo apt-get install ntop
+ 1610  ntop
+ 1611  sysctl
+ 1612  nice
+ 1613  nice / renic
+ 1614  sudo nice / renic
+ 1615  sudo nice /renic
+ 1616  sudo nice /home/
+ 1617  ulimit
+ 1618  sysctl 
+ 1619  swapon
+ 1620  quoton
+ 1621  edquota
+ 1622  quoton
+ 1623  qupta
+ 1624  boot line
+ 1625  elevator
+ 1626  ifconfig
+ 1627  iwconfig
+ 1628  cd /proc/sys/kernel/
+ 1629  ls
+ 1630  sysctl kernel.threads-max 
+ 1631  vmstat
+ 1632  cd ..
+ 1633  cd vm/
+ 1634  ls
+ 1635  sysctl vm.min_free_kbytes 
+ 1636  cd /etc/
+ 1637  ls
+ 1638  cd /
+ 1639  sudo fdisk -l
+ 1640  sudo umount /dev/sdb*
+ 1641  mkfs -t reiserfs -j /dev/sdb
+ 1642  sudo mkfs -t reiserfs -j /dev/sdb
+ 1643  sudo fdisk -l
+ 1644  sudo mkfs -V -t reiserfs -j /dev/sdb
+ 1645  sudo mkfs -V -t reiserfs -I /dev/sdb
+ 1646  sudo umount /dev/sdb*
+ 1647  sudo mkfs -V -t reiserfs -I /dev/sdb
+ 1648  sudo mkfs -V -t reiserfs -j /dev/sdb
+ 1649  sudo mkfs -V -t vfat -I /dev/sdb
+ 1650  sudo mkfs -V -t reiserfs -j /dev/sdb
+ 1651  sudo mkfs -V -t reiserfs -I /dev/sdb
+ 1652  blockdev --report
+ 1653  blockdev -report
+ 1654  ethtool eth0
+ 1655  sudo apt-get install ethtool
+ 1656  ethtool eth0
+ 1657  sudo ethtool eth0
+ 1658  ethtool -s eth0 duplex full
+ 1659  sudo ethtool -s eth0 duplex full
+ 1660  ifconfig eth0 metu 9000 up
+ 1661  ifconfig eth0 mtu 9000 up
+ 1662  sudo ifconfig eth0 mtu 9000 up
+ 1663  cat /proc/sys/net/ipv4/tcp_mem 
+ 1664  cat /proc/sys/net/core/rmem_default 
+ 1665  cat /proc/sys/net/core/rmem_max 
+ 1666  cat /proc/sys/net/core/wmem_default 
+ 1667  cat /proc/sys/net/core/wmem_max 
+ 1668  cat /proc/sys/net/core/optmem_max 
+ 1669  cat /proc/sys/net/core/netdev_max_backlog 
+ 1670  sysctl net.core.rmem_max 
+ 1671  sysctl net.ipv4.tcp_tw_reuse 
+ 1672  cat /proc/filesystems 
+ 1673  cat /proc/stat 
+ 1674  cat /proc/loadavg
+ 1675  PS
+ 1676  ps
+ 1677  top
+ 1678  pid
+ 1679  pd
+ 1680  ps -l
+ 1681  free
+ 1682  busybox free
+ 1683  free
+ 1684  dc
+ 1685  cd
+ 1686  dc
+ 1687  cat /proc/meminfo 
+ 1688  cd learn/
+ 1689  ls
+ 1690  mkdir memoptimize
+ 1691  cd memoptimize/
+ 1692  ls
+ 1693  vi ex01.c
+ 1694  cat ex01.c 
+ 1695  vi hello.c
+ 1696  gcc -o hello hello.c 
+ 1697  ./hello 
+ 1698  file hello
+ 1699  strings hello
+ 1700  nm hello
+ 1701  size hello
+ 1702  readelf 
+ 1703  readelf -a hello
+ 1704  ls -al hello
+ 1705  readelf -l hello
+ 1706  df -k /tmp
+ 1707  ls
+ 1708  vi ex01.c 
+ 1709  vi ex0201.c
+ 1710  gcc -o ex0201  ex0201.c 
+ 1711  vi ex0201.c
+ 1712  gcc -o ex0201  ex0201.c 
+ 1713  ./ex0201 
+ 1714  vi ex0202.c
+ 1715  gcc -o ex0202 ex0202.c 
+ 1716  vi ex0202.c
+ 1717  gcc -o ex0202 ex0202.c 
+ 1718  ./ex0202
+ 1719  vi ex0202.c
+ 1720  gcc -o ex0202 ex0202.c 
+ 1721  ./ex0202
+ 1722  vi ex0202.c
+ 1723  gcc -o ex0202 ex0202.c 
+ 1724  ./ex0202
+ 1725  vi ex02heaps.c
+ 1726  gcc -o heaptest1 ex02heaps.c 
+ 1727  ./heaptest1 
+ 1728  cd /proc/
+ 1729  cd 5924
+ 1730  ls
+ 1731  cat statm
+ 1732  cat maps
+ 1733  cat mem 
+ 1734  ls
+ 1735  cat mem 
+ 1736  ll mem 
+ 1737  file mem
+ 1738  cat smaps 
+ 1739  ls
+ 1740  cat pagemap 
+ 1741  ls
+ 1742  cat status
+ 1743  ls
+ 1744  cat mem 
+ 1745  cat smaps 
+ 1746  ls
+ 1747  cat attr/
+ 1748  ls
+ 1749  cd attr/
+ 1750  ls
+ 1751  cd ..
+ 1752  cd root
+ 1753  ls
+ 1754  cd ..
+ 1755  ls
+ 1756  ll
+ 1757  cd..
+ 1758  ls
+ 1759  cd ..
+ 1760  ls
+ 1761  cd ..
+ 1762  pid
+ 1763  top
+ 1764  ps
+ 1765  ps -a
+ 1766  cd /proc/19942/
+ 1767  ls
+ 1768  cat maps 
+ 1769  ps
+ 1770  ps -l
+ 1771  ps -a -l
+ 1772  cd ..
+ 1773  cd 20235
+ 1774  ls
+ 1775  cat maps 
+ 1776  uname 
+ 1777  uname  -a
+ 1778  cat mmap
+ 1779  ls
+ 1780  cat smaps 
+ 1781  cd /udisk/KINGSTON
+ 1782  sudo -s
+ 1783  cd /media/KINGSTON
+ 1784  ls
+ 1785  cd sd_images/
+ 1786  ls
+ 1787  vi sd_command 
+ 1788  fdisk -l
+ 1789  cd /media/KINGSTON
+ 1790  cd sd_images/
+ 1791  ls
+ 1792  sh sd_command -create /dev/sdc
+ 1793  fdisk -l
+ 1794  sh sd_command -create /dev/sdc
+ 1795  sh sd_command -init /dev/sdc
+ 1796  sh sd_command -all /dev/sdc
+ 1797  fdisk -l
+ 1798  sh s
+ 1799  ls
+ 1800  fdisk -l
+ 1801  ls
+ 1802  sudo sh sd_command -create /dev/sdc
+ 1803  cd /
+ 1804  ls
+ 1805  cd ~
+ 1806  ls
+ 1807  cd 桌面
+ 1808  ls
+ 1809  cd work/
+ 1810  ls
+ 1811  cd w2_v0.0.7.5_internel/
+ 1812  ls
+ 1813  cd sd_images/
+ 1814  ls
+ 1815  sudo sh sd_command -create /dev/sdc
+ 1816  fdisk -l
+ 1817  cd /media/
+ 1818  ls
+ 1819  cd KINGSTON/
+ 1820  ls
+ 1821  cd sd_images/
+ 1822  ls
+ 1823  ll
+ 1824  vi sd_command 
+ 1825  cd -
+ 1826  cd ~
+ 1827  ls
+ 1828  cd 桌面
+ 1829  kls
+ 1830  ls
+ 1831  cd work/
+ 1832  ls
+ 1833  cd w2_v0.0.7.5_internel/
+ 1834  ls
+ 1835  cd sd_images/
+ 1836  ls
+ 1837  vi sd_command 
+ 1838  cd /media/
+ 1839  cd KINGSTON/
+ 1840  ls
+ 1841  cd sd_images/
+ 1842  ls
+ 1843  fdisk -l
+ 1844  sduo fdisk -l
+ 1845  sudo fdisk -l
+ 1846  ls
+ 1847  sh sd_command -create /dev/sdb
+ 1848  sudo sh sd_command -create /dev/sdb
+ 1849  sudo fdisk -l
+ 1850  sudo sh sd_command -create /dev/sdc
+ 1851  sudo fdisk -l
+ 1852  sudo sh sd_command -create /dev/sdc
+ 1853  sudo sh sd_command -init /dev/sdc
+ 1854  sudo sh sd_command -all /dev/sdc
+ 1855  sudo fdisk -l
+ 1856  sudo sh sd_command -all /dev/sdb
+ 1857  sudo sh sd_command -create /dev/sdb
+ 1858  sudo fdisk -l
+ 1859  sudo sh sd_command -create /dev/sdb
+ 1860  sudo fdisk -l
+ 1861  sudo sh sd_command -create /dev/sdb
+ 1862  sudo fdisk -l
+ 1863  sudo sh sd_command -create /dev/sdb
+ 1864  sudo fdisk -l
+ 1865  sudo fi
+ 1866  sudo fdisk -l
+ 1867  sudo sh sd_command -init /dev/sdb
+ 1868  sudo sh sd_command -create /dev/sdb
+ 1869  sudo sh sd_command -all /dev/sdb
+ 1870  mkfs -V -t vfat /dev/sdb
+ 1871  sudo mkfs -V -t vfat /dev/sdb
+ 1872  ls
+ 1873  fdisk -l
+ 1874  sudo fdisk -l
+ 1875  sudo mkfs -V -t vfat /dev/sdb*
+ 1876  umount /dev/sdb*
+ 1877  sudo umount /dev/sdb*
+ 1878  sudo mkfs -V -t vfat /dev/sdb
+ 1879  sudo mkfs -I -V -t vfat /dev/sdb
+ 1880  sudo mkfs  -V -t vfat -I  /dev/sdb
+ 1881  fdisk -l
+ 1882  sudo fdisk -l
+ 1883  ls
+ 1884  cd ..
+ 1885  ls
+ 1886  cd sd_images/
+ 1887  ls
+ 1888  sudo sh sd_command -create /dev/sdb
+ 1889  sudo fdisk -l
+ 1890  cd ~
+ 1891  ls
+ 1892  cd 桌面
+ 1893  ls
+ 1894  cd work/
+ 1895  ls
+ 1896  cd w2_v0.0.7.5_internel/`
+ 1897  ls
+ 1898  ls
+ 1899  cd w2_v0.0.7.5_internel/
+ 1900  ls
+ 1901  cd sd_images/
+ 1902  ls
+ 1903  sudo fdisk -l
+ 1904  sudo sh sd_command -create /dev/sdb
+ 1905  sudo fdisk -l
+ 1906  sudo sh sd_command -create /dev/sdb
+ 1907  sudo fdisk -l
+ 1908  cd /m
+ 1909  cd /media/
+ 1910  ls
+ 1911  cd KINGSTON/
+ 1912  ls
+ 1913  cd sd_images/
+ 1914  ls
+ 1915  ll
+ 1916  sudo fdisk -l
+ 1917  ls
+ 1918  sudo sh sd_command -create /dev/sdb
+ 1919  ls
+ 1920  sudo sh sd_command -init /dev/sdb
+ 1921  sudo sh sd_command -all /dev/sdb
+ 1922  ls
+ 1923  cd ~
+ 1924  ls
+ 1925  cd 桌面
+ 1926  ls
+ 1927  cd work/
+ 1928  ls
+ 1929  cd 0.0.7.8sd_images/
+ 1930  ls
+ 1931  sudo fdisk -l
+ 1932  ls
+ 1933  mkfs -V -t vfat -I /dev/sdb
+ 1934  sudo mkfs -V -t vfat -I /dev/sdb
+ 1935  ls
+ 1936  umount /dev/sdb*
+ 1937  sudo mkfs -V -t vfat -I /dev/sdb
+ 1938  sudo fdisk -l
+ 1939  sudo umount /dev/sdb*
+ 1940  sudo mkfs -V -t vfat -I /dev/sdb
+ 1941  sudo fdisk -l
+ 1942  sudo sh sd_command -create /dev/sdb
+ 1943  sudo sh sd_command -init /dev/sdb
+ 1944  sudo sh sd_command -all /dev/sdb
+ 1945  sudo  fdisk -l
+ 1946  umount /dev/sdb*
+ 1947  sudo umount /dev/sdb*
+ 1948  sudo mkfs -V -t vfat -I /dev/sdb
+ 1949  sudo  fdisk -l
+ 1950  sudo sh sd_command -create /dev/sdb
+ 1951  sudo sh sd_command -init /dev/sdb
+ 1952  sudo sh sd_command -all /dev/sdb
+ 1953  sync
+ 1954  sudo umount /dev/sdb*
+ 1955  sudo mkfs -V -t vfat -I /dev/sdb
+ 1956  sudo sh sd_command -create /dev/sdb
+ 1957  sudo sh sd_command -init /dev/sdb
+ 1958  sudo sh sd_command -all /dev/sdb
+ 1959  sync
+ 1960  cd /proc/
+ 1961  ls
+ 1962  top
+ 1963  which top
+ 1964  sar
+ 1965  ps
+ 1966  ps -a -l
+ 1967  vm stat 
+ 1968  vmstat 
+ 1969  strace
+ 1970  pstree
+ 1971  ipc
+ 1972  ipcs
+ 1973  ipcrm 
+ 1974  ipcs
+ 1975  cat /proc/slabinfo 
+ 1976  ipstat
+ 1977  iostat
+ 1978  netstat 
+ 1979  cat /proc/sys/net/
+ 1980  cd sys
+ 1981  ls
+ 1982  cd net/
+ 1983  ls
+ 1984  cd core/
+ 1985  ls
+ 1986  cd ~
+ 1987  ethereal
+ 1988  tetheral
+ 1989  sudo apt-get install ethereal
+ 1990  sudo apt-get install tethereal
+ 1991  wireshark
+ 1992  sudo apt-get install wireshark
+ 1993  wireshark 
+ 1994  tshark
+ 1995  sudo apt-get install tshark
+ 1996  tshark
+ 1997  minicom 
+ 1998  cd learn/
+ 1999  ls
+ 2000  mkdir review
+ 2001  cd review/
+ 2002  ls
+ 2003  vi sizeofclass.cpp
+ 2004  g++ -o sizeofclass sizeofclass.cpp 
+ 2005  ls
+ 2006  ./sizeofclass 
+ 2007  ls
+ 2008  vi sizeofclass.cpp 
+ 2009  g++ -o sizeofclass sizeofclass.cpp 
+ 2010  ./sizeofclass 
+ 2011  vi sizeofclass.cpp 
+ 2012  g++ -o sizeofclass sizeofclass.cpp 
+ 2013  ./sizeofclass 
+ 2014  head sizeofclass.cpp 
+ 2015  tail sizeofclass.cpp 
+ 2016  more sizeofclass.cpp 
+ 2017  less sizeofclass.cpp 
+ 2018  vi arrayVSpointer.c
+ 2019  ls
+ 2020  gcc -S arrayVSpointer.c 
+ 2021  ls
+ 2022  vi arrayVSpointer.s
+ 2023  vi arrayVSpointer.c 
+ 2024  gcc -S arrayVSpointer.c 
+ 2025  cat arrayVSpointer.s
+ 2026  gcc -Wall -save-temps arrayVSpointer.c 
+ 2027  ls
+ 2028  vi arrayVSpointer.i
+ 2029  vi arrayVSpointer.s
+ 2030  rm arrayVSpointer.i
+ 2031  rm arrayVSpointer.s
+ 2032  rm arrayVSpointer.o
+ 2033  ls
+ 2034  rm a.out 
+ 2035  ls
+ 2036  gcc -S arrayVSpointer.c 
+ 2037  ls
+ 2038  cat arrayVSpointer.s
+ 2039  ls
+ 2040  cd ..
+ 2041  ls
+ 2042  cd bash/
+ 2043  ls
+ 2044  file1.txt
+ 2045  touch file1.txt
+ 2046  touch file2.txt
+ 2047  vi file1.txt 
+ 2048  vi file2.txt 
+ 2049  cat file1.txt file2.txt | sort | uniq -d
+ 2050  ls
+ 2051  vi file1.txt 
+ 2052  cat file1.txt file2.txt | sort | uniq -u
+ 2053  cat file1.txt file2.txt | sort >id| uniq -u
+ 2054  ls
+ 2055  cat id
+ 2056  rm id
+ 2057  ls
+ 2058  vi file1.txt 
+ 2059  vi file2.txt 
+ 2060  cat file1.txt file2.txt | sort >id| uniq -u
+ 2061  cat id 
+ 2062  rm id 
+ 2063  ls
+ 2064  cat file1.txt file2.txt | sort | uniq -u
+ 2065* 
+ 2066  cat file1.txt file2.txt | sort | uniq -u
+ 2067  cat file1.txt |sort|uniq>temp1.txt
+ 2068  cat file2.txt |sort|uniq>temp2.txt
+ 2069  cat temp1.txt 
+ 2070  cat temp2.txt 
+ 2071  cat temp1.txt temp2.txt |sort|uniq -d
+ 2072  cat temp1.txt temp2.txt |sort|uniq -u
+ 2073  uniq -help
+ 2074  uniq --help
+ 2075  cat file1.txt file2.txt | sort | uniq -d
+ 2076  cat file1.txt file2.txt | sort | uniq -u
+ 2077  vi file1.txt 
+ 2078  cp file1.txt  file3.txt
+ 2079  ls
+ 2080  vi file3.txt 
+ 2081  cat file1.txt file3.txt | sort | uniq -u
+ 2082  cat file1.txt file2.txt | sort | uniq -d>temp
+ 2083  cat file1.txt tmp | sort | uniq -u
+ 2084  cat file1.txt temp | sort | uniq -u
+ 2085  cat file1.txt 
+ 2086  cat file3
+ 2087  cat file3.txt 
+ 2088  vi file1.txt 
+ 2089  cat file1.txt file3.txt | sort | uniq -d>temp
+ 2090  cat temp
+ 2091  cat file1.txt temp | sort | uniq -u
+ 2092  sort -u file1.txt file3.txt >temp1
+ 2093  cat temp
+ 2094  cat temp1
+ 2095  uniq -u file1.txt file3.txt >temp1
+ 2096  cat temp1
+ 2097  uniq -d file1.txt file3.txt >temp1
+ 2098  cat temp1
+ 2099  sort -d file1.txt file3.txt >temp1
+ 2100  cat temp1
+ 2101  <file1.dat uniq file2.dat > file3
+ 2102  netperf 
+ 2103  iperf
+ 2104  more complete loving
+ 2105  echo $?
+ 2106  alias 
+ 2107  alias hello='hello "hello $USER"'
+ 2108  hello 
+ 2109  hello
+ 2110  alias hello='echo "hello $USER"'
+ 2111  hello
+ 2112  type hello 
+ 2113  unalias
+ 2114  unalias hello
+ 2115  ls
+ 2116  ls ./ex*
+ 2117  ls ./?????
+ 2118  ls ./????*
+ 2119  ls ./[!e-r]*
+ 2120  history 
+ 2121  history >10.11commandhistory
