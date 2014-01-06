@@ -11,7 +11,7 @@ int main (int   argc,char *argv[])
         nano_str = "(Prerelease)";
     else
         nano_str = "";
-    printf ("This program is linked against GStreamer %d.%d.%d %s\n",
+    printf ("This program   is linked against GStreamer %d.%d.%d %s\n",
           major, minor, micro, nano_str);
     return 0;
 }
